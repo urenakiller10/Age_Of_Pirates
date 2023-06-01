@@ -34,7 +34,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <Component id="SeaPanel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="11" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -46,126 +46,155 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   <Component id="jScrollPane2" min="-2" pref="324" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="154" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jScrollPane1" alignment="0" pref="269" max="32767" attributes="0"/>
-                      <Component id="txfSend" alignment="0" max="32767" attributes="0"/>
-                      <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="lblTurno" min="-2" pref="143" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="btnSettings" min="-2" pref="22" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="btnTienda" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="btnIniciar" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="txfSend" max="32767" attributes="0"/>
                           </Group>
-                          <Component id="lblQuantityCanyon" min="-2" pref="120" max="-2" attributes="0"/>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="lblMoney" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="lbliron" min="-2" pref="123" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="btnTienda" min="-2" pref="73" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="btnIniciar" min="-2" pref="73" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="btnSend" min="-2" pref="73" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="lblQuantityBombCanyon" alignment="0" max="32767" attributes="0"/>
-                          <Component id="lblQuantityRedBeardCanyon" alignment="0" max="32767" attributes="0"/>
-                          <Component id="lblQuantityMultipleCanyon" alignment="0" max="32767" attributes="0"/>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="btnCreateBombCanyon" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="btnCreateRedBeardCanyon" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="btnEnemy3" min="-2" pref="73" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="btnCreateMultipleCanyon" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="btnEnemy2" min="-2" pref="73" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="btnCreateCanyon" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="btnEnemy1" min="-2" pref="73" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace pref="44" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                  <Component id="btnCreateBombCanyon" min="-2" pref="225" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
+                                          <Component id="lblTurno" min="-2" pref="143" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="btnSettings" min="-2" pref="22" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="btnSend" min="-2" pref="73" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="lblQuantityBombCanyon" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="lblQuantityRedBeardCanyon" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="lblQuantityMultipleCanyon" alignment="0" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Component id="btnCreateMultipleCanyon" pref="226" max="32767" attributes="0"/>
+                                                      <Component id="btnCreateCanyon" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="102" attributes="0">
+                                                          <EmptySpace min="30" max="32767" attributes="0"/>
+                                                          <Component id="btnEnemy2" min="-2" pref="73" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                          <Component id="btnEnemy1" min="-2" pref="73" max="-2" attributes="0"/>
+                                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="btnCreateRedBeardCanyon" min="-2" pref="226" max="-2" attributes="0"/>
+                                                  <EmptySpace pref="18" max="32767" attributes="0"/>
+                                                  <Component id="btnEnemy3" min="-2" pref="73" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="lblQuantityCanyon" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" alignment="1" min="-2" pref="275" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="lblMoney" min="-2" pref="208" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="lbliron" min="-2" pref="123" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="737" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="37" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="200" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="btnSettings" min="-2" pref="23" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="jScrollPane2" min="-2" pref="133" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="lblTurno" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lblMoney" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lbliron" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnCreateCanyon" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnEnemy1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="lblQuantityCanyon" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnCreateMultipleCanyon" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnEnemy2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="lblQuantityMultipleCanyon" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnCreateRedBeardCanyon" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnEnemy3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="lblQuantityRedBeardCanyon" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnCreateBombCanyon" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="lblQuantityBombCanyon" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="btnSettings" min="-2" pref="23" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                                  <Component id="lblTurno" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblMoney" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbliron" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                                  <Component id="btnEnemy1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="btnCreateCanyon" min="-2" pref="34" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblQuantityCanyon" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="btnEnemy2" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnCreateMultipleCanyon" min="-2" pref="35" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblQuantityMultipleCanyon" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="btnEnemy3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnCreateRedBeardCanyon" min="-2" pref="36" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="lblQuantityRedBeardCanyon" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="btnCreateBombCanyon" min="-2" pref="36" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lblQuantityBombCanyon" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Component id="txfSend" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnSend" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="btnTienda" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btnIniciar" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="jScrollPane2" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -173,6 +202,12 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="btnTienda">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="99" red="99" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Tienda"/>
           </Properties>
           <Events>
@@ -181,6 +216,12 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnIniciar">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="ff" red="99" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Iniciar"/>
           </Properties>
           <Events>
@@ -189,6 +230,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnSend">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Enviar"/>
           </Properties>
           <Events>
@@ -217,17 +261,23 @@
         </Container>
         <Component class="javax.swing.JLabel" name="lblMoney">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="jLabel1"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lbliron">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="jLabel2"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnCreateCanyon">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Crear canon"/>
+            <Property name="text" type="java.lang.String" value="Crear ca&#xf1;&#xf3;n(500 kg)"/>
             <Property name="actionCommand" type="java.lang.String" value="Crear ca&#xf1;&#xf3;n"/>
           </Properties>
           <Events>
@@ -236,12 +286,18 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblQuantityCanyon">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="f2" green="f2" red="f2" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="jLabel1"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnCreateMultipleCanyon">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Crear canon"/>
+            <Property name="text" type="java.lang.String" value="Crear ca&#xf1;&#xf3;n m&#xfa;ltiple (1000 kg)"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCreateMultipleCanyonActionPerformed"/>
@@ -249,13 +305,18 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblQuantityMultipleCanyon">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="f2" green="f2" red="f2" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="jLabel1"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnCreateRedBeardCanyon">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Crear canon"/>
-            <Property name="actionCommand" type="java.lang.String" value="Crear canon"/>
+            <Property name="text" type="java.lang.String" value="Crear ca&#xf1;&#xf3;n Barba Roja (5000kg)"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCreateRedBeardCanyonActionPerformed"/>
@@ -263,12 +324,18 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblQuantityRedBeardCanyon">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="f2" green="f2" red="f2" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="jLabel1"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnCreateBombCanyon">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Crear canon"/>
+            <Property name="text" type="java.lang.String" value="Crear ca&#xf1;&#xf3;n bomba (2000kg)"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCreateBombCanyonActionPerformed"/>
@@ -276,6 +343,12 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblQuantityBombCanyon">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="f2" green="f2" red="f2" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="jLabel1"/>
           </Properties>
         </Component>
@@ -306,6 +379,7 @@
         <Component class="javax.swing.JButton" name="btnEnemy3">
           <Properties>
             <Property name="text" type="java.lang.String" value="player2"/>
+            <Property name="actionCommand" type="java.lang.String" value="player3"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
@@ -345,11 +419,16 @@
         </Container>
         <Component class="javax.swing.JLabel" name="lblTurno">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="14" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Turno: Jugador 1"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="4"/>
           </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
         </Component>
       </SubComponents>
     </Container>

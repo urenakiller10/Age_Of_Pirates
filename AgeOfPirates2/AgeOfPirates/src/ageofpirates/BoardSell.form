@@ -80,7 +80,6 @@
                               <Component id="btnSellRedBeardCanyon" alignment="0" min="-2" pref="73" max="-2" attributes="0"/>
                               <Component id="btnSellBombCanyon" alignment="0" min="-2" pref="73" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -135,7 +134,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="hierro a vender: "/>
+            <Property name="text" type="java.lang.String" value="Hierro a vender: "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnSell">

@@ -67,7 +67,7 @@ public class Sea extends javax.swing.JFrame {
      * Creates new form Oceano
      */
     public Sea() {
-        nomCliente = JOptionPane.showInputDialog("Introducir Nick :");
+        nomCliente = JOptionPane.showInputDialog("Introducir su nombre:");
         initComponents();
         try {
             player= new Player(this);
@@ -139,24 +139,24 @@ public class Tutorial extends Thread{
     public void run(){ 
         while(isRunning){
             try {
-                JOptionPane.showMessageDialog(null, "Primero construiras una fuente de energia");
+                JOptionPane.showMessageDialog(null, "Primero se construirá una Fuente de Energía");
                 objective= new  EnergyFount();
-                JOptionPane.showMessageDialog(null, "colocala donde desees");
+                JOptionPane.showMessageDialog(null, "Coloca la Fuente donde desee");
                 colocacion=true;
                 while(colocacion==true){
                     sleep(10);
                 }
-                JOptionPane.showMessageDialog(null, "Ahora construiras un conector");
+                JOptionPane.showMessageDialog(null, "Ahora se construirá un conector");
                 objective= new Conector();
-                JOptionPane.showMessageDialog(null, "coloca el conector donde desees");
+                JOptionPane.showMessageDialog(null, "Coloca el conector donde desee");
                 colocacion=true;
                 while(colocacion==true){
                     sleep(10);
                 }
                 grafoMatriz.agregarArista(grafoMatriz.vertices[0], grafoMatriz.vertices[1]);
-                JOptionPane.showMessageDialog(null, "Y por ultimo coloca tu mercado");
+                JOptionPane.showMessageDialog(null, "Por último se coloca el mercado");
                 objective= new Store();
-                JOptionPane.showMessageDialog(null, "coloca el mercado donde desees");
+                JOptionPane.showMessageDialog(null, "Coloca el mercado donde dese");
                 colocacion=true;
                 while(colocacion==true){
                     sleep(10);
@@ -264,9 +264,12 @@ protected void setRemolinos(){
         jScrollPane2 = new javax.swing.JScrollPane();
         txaBitacora = new javax.swing.JTextArea();
         lblTurno = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        btnTienda.setBackground(new java.awt.Color(153, 153, 153));
+        btnTienda.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnTienda.setText("Tienda");
         btnTienda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -274,6 +277,8 @@ protected void setRemolinos(){
             }
         });
 
+        btnIniciar.setBackground(new java.awt.Color(153, 255, 153));
+        btnIniciar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnIniciar.setText("Iniciar");
         btnIniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -281,6 +286,7 @@ protected void setRemolinos(){
             }
         });
 
+        btnSend.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnSend.setText("Enviar");
         btnSend.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -292,11 +298,13 @@ protected void setRemolinos(){
         txaMensajes.setRows(5);
         jScrollPane1.setViewportView(txaMensajes);
 
+        lblMoney.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         lblMoney.setText("jLabel1");
 
+        lbliron.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         lbliron.setText("jLabel2");
 
-        btnCreateCanyon.setText("Crear canon");
+        btnCreateCanyon.setText("Crear cañón(500 kg)");
         btnCreateCanyon.setActionCommand("Crear cañón");
         btnCreateCanyon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -304,34 +312,41 @@ protected void setRemolinos(){
             }
         });
 
+        lblQuantityCanyon.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblQuantityCanyon.setForeground(new java.awt.Color(242, 242, 242));
         lblQuantityCanyon.setText("jLabel1");
 
-        btnCreateMultipleCanyon.setText("Crear canon");
+        btnCreateMultipleCanyon.setText("Crear cañón múltiple (1000 kg)");
         btnCreateMultipleCanyon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCreateMultipleCanyonActionPerformed(evt);
             }
         });
 
+        lblQuantityMultipleCanyon.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblQuantityMultipleCanyon.setForeground(new java.awt.Color(242, 242, 242));
         lblQuantityMultipleCanyon.setText("jLabel1");
 
-        btnCreateRedBeardCanyon.setText("Crear canon");
-        btnCreateRedBeardCanyon.setActionCommand("Crear canon");
+        btnCreateRedBeardCanyon.setText("Crear cañón Barba Roja (5000kg)");
         btnCreateRedBeardCanyon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCreateRedBeardCanyonActionPerformed(evt);
             }
         });
 
+        lblQuantityRedBeardCanyon.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblQuantityRedBeardCanyon.setForeground(new java.awt.Color(242, 242, 242));
         lblQuantityRedBeardCanyon.setText("jLabel1");
 
-        btnCreateBombCanyon.setText("Crear canon");
+        btnCreateBombCanyon.setText("Crear cañón bomba (2000kg)");
         btnCreateBombCanyon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCreateBombCanyonActionPerformed(evt);
             }
         });
 
+        lblQuantityBombCanyon.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblQuantityBombCanyon.setForeground(new java.awt.Color(242, 242, 242));
         lblQuantityBombCanyon.setText("jLabel1");
 
         btnEnemy1.setText("player1");
@@ -351,6 +366,7 @@ protected void setRemolinos(){
         });
 
         btnEnemy3.setText("player2");
+        btnEnemy3.setActionCommand("player3");
         btnEnemy3.setEnabled(false);
         btnEnemy3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -369,6 +385,7 @@ protected void setRemolinos(){
         txaBitacora.setRows(5);
         jScrollPane2.setViewportView(txaBitacora);
 
+        lblTurno.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblTurno.setText("Turno: Jugador 1");
 
         javax.swing.GroupLayout SeaPanelLayout = new javax.swing.GroupLayout(SeaPanel);
@@ -376,102 +393,121 @@ protected void setRemolinos(){
         SeaPanelLayout.setHorizontalGroup(
             SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SeaPanelLayout.createSequentialGroup()
-                .addGap(19, 19, 19)
+                .addGap(20, 20, 20)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(154, 154, 154)
                 .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 269, Short.MAX_VALUE)
-                    .addComponent(txfSend)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SeaPanelLayout.createSequentialGroup()
-                            .addComponent(lblTurno, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnSettings, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(lblQuantityCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SeaPanelLayout.createSequentialGroup()
-                            .addComponent(lblMoney, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(lbliron, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SeaPanelLayout.createSequentialGroup()
-                            .addComponent(btnTienda, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(btnIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(107, 107, 107))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SeaPanelLayout.createSequentialGroup()
-                            .addComponent(btnSend, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(89, 89, 89))
-                        .addComponent(lblQuantityBombCanyon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblQuantityRedBeardCanyon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblQuantityMultipleCanyon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SeaPanelLayout.createSequentialGroup()
-                            .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, SeaPanelLayout.createSequentialGroup()
-                                    .addComponent(btnCreateBombCanyon)
-                                    .addGap(0, 0, Short.MAX_VALUE))
-                                .addGroup(SeaPanelLayout.createSequentialGroup()
-                                    .addComponent(btnCreateRedBeardCanyon)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnEnemy3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(SeaPanelLayout.createSequentialGroup()
-                                    .addComponent(btnCreateMultipleCanyon)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnEnemy2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(SeaPanelLayout.createSequentialGroup()
-                                    .addComponent(btnCreateCanyon)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnEnemy1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGap(20, 20, 20))))
-                .addContainerGap())
+                    .addGroup(SeaPanelLayout.createSequentialGroup()
+                        .addGap(153, 153, 153)
+                        .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(SeaPanelLayout.createSequentialGroup()
+                                .addComponent(btnTienda, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(txfSend)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SeaPanelLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                        .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(btnCreateBombCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SeaPanelLayout.createSequentialGroup()
+                                        .addGap(85, 85, 85)
+                                        .addComponent(lblTurno, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(btnSettings, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SeaPanelLayout.createSequentialGroup()
+                                        .addComponent(btnSend, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(89, 89, 89))
+                                    .addComponent(lblQuantityBombCanyon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblQuantityRedBeardCanyon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblQuantityMultipleCanyon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SeaPanelLayout.createSequentialGroup()
+                                        .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, SeaPanelLayout.createSequentialGroup()
+                                                .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                    .addComponent(btnCreateMultipleCanyon, javax.swing.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
+                                                    .addComponent(btnCreateCanyon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(SeaPanelLayout.createSequentialGroup()
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addComponent(btnEnemy2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                    .addGroup(SeaPanelLayout.createSequentialGroup()
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(btnEnemy1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGap(0, 0, Short.MAX_VALUE))))
+                                            .addGroup(SeaPanelLayout.createSequentialGroup()
+                                                .addComponent(btnCreateRedBeardCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                                                .addComponent(btnEnemy3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGap(20, 20, 20))
+                                    .addComponent(lblQuantityCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SeaPanelLayout.createSequentialGroup()
+                                .addComponent(lblMoney, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(lbliron, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(737, 737, 737))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SeaPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(200, 200, 200))
         );
         SeaPanelLayout.setVerticalGroup(
             SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SeaPanelLayout.createSequentialGroup()
-                .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(SeaPanelLayout.createSequentialGroup()
-                        .addComponent(btnSettings, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SeaPanelLayout.createSequentialGroup()
-                        .addComponent(lblTurno)
-                        .addGap(18, 18, 18)))
-                .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblMoney)
-                    .addComponent(lbliron))
-                .addGap(38, 38, 38)
-                .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCreateCanyon)
-                    .addComponent(btnEnemy1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblQuantityCanyon)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCreateMultipleCanyon)
-                    .addComponent(btnEnemy2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblQuantityMultipleCanyon)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCreateRedBeardCanyon)
-                    .addComponent(btnEnemy3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblQuantityRedBeardCanyon)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnCreateBombCanyon)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblQuantityBombCanyon)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(SeaPanelLayout.createSequentialGroup()
+                        .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnSettings, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(SeaPanelLayout.createSequentialGroup()
+                                .addGap(14, 14, 14)
+                                .addComponent(lblTurno)))
+                        .addGap(27, 27, 27)
+                        .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblMoney)
+                            .addComponent(lbliron))
+                        .addGap(8, 8, 8)
+                        .addComponent(jLabel1)
+                        .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(SeaPanelLayout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(btnEnemy1))
+                            .addGroup(SeaPanelLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnCreateCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblQuantityCanyon)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnEnemy2)
+                            .addComponent(btnCreateMultipleCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblQuantityMultipleCanyon)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnEnemy3)
+                            .addComponent(btnCreateRedBeardCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblQuantityRedBeardCanyon)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnCreateBombCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblQuantityBombCanyon)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txfSend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnSend)
-                        .addGap(45, 45, 45)
+                        .addGap(18, 18, 18)
                         .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnTienda)
-                            .addComponent(btnIniciar)))
-                    .addComponent(jScrollPane2))
-                .addGap(35, 35, 35))
+                            .addComponent(btnIniciar))))
+                .addGap(68, 68, 68))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -487,7 +523,7 @@ protected void setRemolinos(){
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(SeaPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 11, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -1140,6 +1176,7 @@ protected void setRemolinos(){
     private javax.swing.JButton btnSend;
     private javax.swing.JButton btnSettings;
     private javax.swing.JButton btnTienda;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblMoney;

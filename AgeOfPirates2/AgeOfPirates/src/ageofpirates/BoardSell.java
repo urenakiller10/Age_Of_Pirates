@@ -65,7 +65,7 @@ public class BoardSell extends javax.swing.JFrame {
         });
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("hierro a vender: ");
+        jLabel1.setText("Hierro a vender: ");
 
         btnSell.setText("Vender");
         btnSell.addActionListener(new java.awt.event.ActionListener() {
@@ -158,8 +158,7 @@ public class BoardSell extends javax.swing.JFrame {
                             .addComponent(btnSellCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnSellMultipleCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnSellRedBeardCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnSellBombCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, 0))))
+                            .addComponent(btnSellBombCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))))
         );
         panelBoardSellLayout.setVerticalGroup(
             panelBoardSellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
