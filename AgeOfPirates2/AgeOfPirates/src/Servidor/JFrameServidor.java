@@ -65,17 +65,22 @@ public class JFrameServidor extends javax.swing.JFrame {
         btnReproducir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(204, 204, 204));
 
         txaMensajesServidor.setColumns(20);
         txaMensajesServidor.setRows(5);
         jScrollPane1.setViewportView(txaMensajesServidor);
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel1.setText("Mensajes de consola");
 
+        jComboBox1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "He is a Pirate", "My Heart Will Go On", "Cancion 3", "La mejor de todas", "Unlasting" }));
 
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton1.setText("Cambiar");
 
+        btnReproducir.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnReproducir.setText("Pausar");
         btnReproducir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,7 +109,7 @@ public class JFrameServidor extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(97, 97, 97)
                         .addComponent(jLabel1)))
-                .addContainerGap(102, Short.MAX_VALUE))
+                .addContainerGap(101, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
