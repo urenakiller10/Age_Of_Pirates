@@ -4,6 +4,11 @@
  * and open the template in the editor.
  */
 package Servidor;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import java.io.File;
+import javax.sound.sampled.*;
 
 /**
  *
@@ -17,6 +22,29 @@ public class JFrameServidor extends javax.swing.JFrame {
     public JFrameServidor() {
         initComponents();
         servidor1 = new servidor(this);
+                Thread hiloMusica = new Thread(() -> {
+            reproducirMusica();
+        });
+        hiloMusica.start();
+    }
+    
+        public static void reproducirMusica() {
+        String rutaArchivo = "src/servidor/piratas.wav";
+
+        try {
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(rutaArchivo).getAbsoluteFile());
+            Clip clip = AudioSystem.getClip();
+            clip.open(audioInputStream);
+            // Obtener el control de volumen
+            FloatControl volumenControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+            // Establecer el volumen deseado en dB (-20.0f es un volumen más bajo)
+            volumenControl.setValue(-20.0f);
+            clip.start();
+            Thread.sleep(clip.getMicrosecondLength() / 1000);
+            clip.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     /**
