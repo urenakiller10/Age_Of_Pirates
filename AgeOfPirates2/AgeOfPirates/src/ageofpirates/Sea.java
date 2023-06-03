@@ -154,7 +154,7 @@ public class Tutorial extends Thread{
                 grafoMatriz.agregarArista(grafoMatriz.vertices[0], grafoMatriz.vertices[1]);
                 JOptionPane.showMessageDialog(null, "Por último se coloca el mercado");
                 objective= new Store();
-                JOptionPane.showMessageDialog(null, "Coloca el mercado donde dese");
+                JOptionPane.showMessageDialog(null, "Coloca el mercado donde desee");
                 colocacion=true;
                 while(colocacion==true){
                     sleep(10);
@@ -471,7 +471,7 @@ protected void setRemolinos(){
                     .addComponent(btnSettings, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblTurno))
                 .addGap(18, 18, 18)
-                .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(SeaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblMoney)
                     .addComponent(lbliron))
                 .addGap(8, 8, 8)

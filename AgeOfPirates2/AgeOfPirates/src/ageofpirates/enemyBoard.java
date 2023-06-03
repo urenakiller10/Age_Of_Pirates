@@ -931,28 +931,32 @@ public void clickSobreTablero(java.awt.event.MouseEvent evt) throws IOException
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        btnAtackCanyon.setText("Atacar canon");
+        btnAtackCanyon.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnAtackCanyon.setText("Atacar con canón");
         btnAtackCanyon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtackCanyonActionPerformed(evt);
             }
         });
 
-        btnAtackMultipleCanyon.setText("Atacar canon Multiple");
+        btnAtackMultipleCanyon.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnAtackMultipleCanyon.setText("Atacar con cañón múltiple");
         btnAtackMultipleCanyon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtackMultipleCanyonActionPerformed(evt);
             }
         });
 
-        btnAtackBombCanyon.setText("Atacar canon Bomba");
+        btnAtackBombCanyon.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnAtackBombCanyon.setText("Atacar con cañón bomba");
         btnAtackBombCanyon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtackBombCanyonActionPerformed(evt);
             }
         });
 
-        btnAtackRedBeardCanyon.setText("Atacar canon Barba roja");
+        btnAtackRedBeardCanyon.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnAtackRedBeardCanyon.setText("Atacar con cañón barba roja");
         btnAtackRedBeardCanyon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtackRedBeardCanyonActionPerformed(evt);

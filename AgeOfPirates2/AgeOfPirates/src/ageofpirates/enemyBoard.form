@@ -75,7 +75,10 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="btnAtackCanyon">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Atacar canon"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Atacar con can&#xf3;n"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAtackCanyonActionPerformed"/>
@@ -83,7 +86,10 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnAtackMultipleCanyon">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Atacar canon Multiple"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Atacar con ca&#xf1;&#xf3;n m&#xfa;ltiple"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAtackMultipleCanyonActionPerformed"/>
@@ -91,7 +97,10 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnAtackBombCanyon">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Atacar canon Bomba"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Atacar con ca&#xf1;&#xf3;n bomba"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAtackBombCanyonActionPerformed"/>
@@ -99,7 +108,10 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnAtackRedBeardCanyon">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Atacar canon Barba roja"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Atacar con ca&#xf1;&#xf3;n barba roja"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAtackRedBeardCanyonActionPerformed"/>

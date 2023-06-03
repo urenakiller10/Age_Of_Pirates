@@ -67,6 +67,7 @@ public class BoardSell extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Hierro a vender: ");
 
+        btnSell.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnSell.setText("Vender");
         btnSell.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,6 +84,7 @@ public class BoardSell extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("1 de hierro=2 $");
 
+        btnSellCanyon.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnSellCanyon.setText("Vender");
         btnSellCanyon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,6 +92,7 @@ public class BoardSell extends javax.swing.JFrame {
             }
         });
 
+        btnSellMultipleCanyon.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnSellMultipleCanyon.setText("Vender");
         btnSellMultipleCanyon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,6 +100,7 @@ public class BoardSell extends javax.swing.JFrame {
             }
         });
 
+        btnSellRedBeardCanyon.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnSellRedBeardCanyon.setText("Vender");
         btnSellRedBeardCanyon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,6 +108,7 @@ public class BoardSell extends javax.swing.JFrame {
             }
         });
 
+        btnSellBombCanyon.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnSellBombCanyon.setText("Vender");
         btnSellBombCanyon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,15 +116,19 @@ public class BoardSell extends javax.swing.JFrame {
             }
         });
 
+        lblSellCanyon.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblSellCanyon.setForeground(new java.awt.Color(255, 255, 255));
         lblSellCanyon.setText("Vender un cañon a 500$");
 
+        lblSellMultipleCanyon.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblSellMultipleCanyon.setForeground(new java.awt.Color(255, 255, 255));
         lblSellMultipleCanyon.setText("Vender un cañon Multiple a 1000$");
 
+        lblSellRedBeardCanyon.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblSellRedBeardCanyon.setForeground(new java.awt.Color(255, 255, 255));
         lblSellRedBeardCanyon.setText("Vender un cañon Barba roja a 5000$");
 
+        lblSellBombCanyon.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblSellBombCanyon.setForeground(new java.awt.Color(255, 255, 255));
         lblSellBombCanyon.setText("Vender un cañon bomba a 2000$");
 
@@ -144,16 +153,13 @@ public class BoardSell extends javax.swing.JFrame {
                             .addComponent(txfIronToSell)
                             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(panelBoardSellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBoardSellLayout.createSequentialGroup()
+                        .addGroup(panelBoardSellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblSellRedBeardCanyon)
+                            .addGroup(panelBoardSellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(lblSellCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(30, 30, 30))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBoardSellLayout.createSequentialGroup()
-                                .addGroup(panelBoardSellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(lblSellMultipleCanyon)
-                                    .addComponent(lblSellRedBeardCanyon)
-                                    .addComponent(lblSellBombCanyon))
-                                .addGap(38, 38, 38)))
+                                .addComponent(lblSellMultipleCanyon))
+                            .addComponent(lblSellBombCanyon, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGap(38, 38, 38)
                         .addGroup(panelBoardSellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnSellCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnSellMultipleCanyon, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
