@@ -10,9 +10,11 @@ import javax.sound.sampled.Clip;
 import java.io.File;
 import javax.sound.sampled.*;
 
+
+
 /**
  *
- * @author Jasson
+ * @author 
  */
 public class JFrameServidor extends javax.swing.JFrame {
     servidor servidor1;
