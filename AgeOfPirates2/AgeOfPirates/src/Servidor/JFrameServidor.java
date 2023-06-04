@@ -61,16 +61,16 @@ public void resumirMusica(){
 public String obtenerRutaDeCancion(String seleccion) {
     // Aquí puedes mapear cada elemento seleccionado en el combobox con la ruta correspondiente del archivo de música
     if (seleccion.equals("He is a Pirate")) {
-        return "src/servidor/Piratas.mp3";
+        return "src/Resources/Piratas.mp3";
     } else if (seleccion.equals("My Heart Will Go On")) {
         return "src/servidor/My Heart Will Go on.mp3";
 
     } else if (seleccion.equals("La mejor de todas")) {
-        return "src/servidor/La Mejor de Todas.mp3";
+        return "src/Resources/La Mejor de Todas.mp3";
     } else if (seleccion.equals("Unlasting")) {
-        return "src/servidor/Unlasting.mp3";
+        return "src/Resources/Unlasting.mp3";
     } else if (seleccion.equals("???")) {
-        return "src/servidor/secret.mp3";
+        return "src/Resources/secret.mp3";
     }
 
     return null; // Si no hay una ruta definida para el elemento seleccionado
