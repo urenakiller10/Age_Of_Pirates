@@ -9,10 +9,7 @@ import static java.lang.Thread.sleep;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-/**
- *
- * @author Jasson
- */
+
 public class BoardSell extends javax.swing.JFrame {
     Player player;
     threadLabel labelThread;

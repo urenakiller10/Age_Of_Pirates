@@ -10,11 +10,6 @@ import javax.sound.sampled.Clip;
 import java.io.File;
 import jaco.mp3.player.MP3Player;
 
-
-/**
- *
- * @author 
- */
 public class JFrameServidor extends javax.swing.JFrame {
     servidor servidor1;
     private boolean reproduciendo = true;
@@ -108,7 +103,7 @@ public String obtenerRutaDeCancion(String seleccion) {
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "He is a Pirate", "My Heart Will Go On", "La mejor de todas", "Unlasting", "???" }));
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton1.setText("Cambiar");
+        jButton1.setText("Reproducir");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -144,7 +139,7 @@ public String obtenerRutaDeCancion(String seleccion) {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(97, 97, 97)
                         .addComponent(jLabel1)))
-                .addContainerGap(87, Short.MAX_VALUE))
+                .addContainerGap(68, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

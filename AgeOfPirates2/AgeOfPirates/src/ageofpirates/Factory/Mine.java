@@ -7,10 +7,7 @@ package ageofpirates.Factory;
 import ageofpirates.Player;
 import java.io.Serializable;
 
-/**
- *
- * @author Jasson
- */
+
 public class Mine extends Factory implements Serializable {
     ThreadCrono crono;
     int quantity=10;

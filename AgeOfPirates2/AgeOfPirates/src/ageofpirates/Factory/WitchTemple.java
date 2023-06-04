@@ -6,10 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Jasson
- */
+
 public class WitchTemple extends Factory implements Serializable  {
     ThreadCrono crono;
     Sea sea;

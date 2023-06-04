@@ -10,10 +10,7 @@ import java.io.*;
 import java.net.*;
 import java.util.ArrayList;
 
- /*
- *
- * @author Diego
- */
+
 public class Player {
     public static String IP_SERVER = "localhost"; //IP del Servidor
    Sea ventanaCliente; // Ventana del cliente

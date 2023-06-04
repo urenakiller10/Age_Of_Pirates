@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 //import static tableroprogramario.Tablero.BOARD_SIZE;
 /**
  *
- * @author Diego
+ * 
  */
 public class threadServidor extends Thread
 {

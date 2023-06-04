@@ -22,10 +22,7 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Jasson
- */
+
 public class enemyBoard extends javax.swing.JFrame {
 
 

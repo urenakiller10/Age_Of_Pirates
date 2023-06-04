@@ -174,12 +174,14 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnFountEnergy" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
-                      <Component id="btnWitchTemple" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="btnConnector" alignment="0" min="-2" pref="97" max="-2" attributes="0"/>
                       <Component id="btnGhostShip" alignment="0" min="-2" pref="97" max="-2" attributes="0"/>
                       <Component id="btnMine" alignment="0" min="-2" pref="97" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnFountEnergy" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
+                          <Component id="btnWitchTemple" alignment="3" min="-2" pref="97" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -198,7 +200,7 @@
                       <Component id="lblMinaCosto" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" max="-2" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="btnSell" alignment="0" min="-2" pref="97" max="-2" attributes="0"/>
                       <Component id="btnRedBeard" alignment="0" min="-2" pref="97" max="-2" attributes="0"/>
                       <Component id="btnMerchanMultipleCanyon" alignment="1" min="-2" pref="97" max="-2" attributes="0"/>

@@ -7,10 +7,7 @@ package ageofpirates.Factory;
 
 import java.io.Serializable;
 
-/**
- *
- * @author Jasson
- */
+
 public class Store extends Factory implements Serializable  {
     public Store() {
         super("Market", 2000,"1x2",4);

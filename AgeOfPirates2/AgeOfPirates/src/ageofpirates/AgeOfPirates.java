@@ -1,9 +1,5 @@
 package ageofpirates;
 
-/**
- *
- * @author [Redacted]
- */
 public class AgeOfPirates {
 
     public AgeOfPirates() {
@@ -11,9 +7,6 @@ public class AgeOfPirates {
     }
 
     
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
 
     }
