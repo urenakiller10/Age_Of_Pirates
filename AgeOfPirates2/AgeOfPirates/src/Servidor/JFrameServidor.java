@@ -53,12 +53,13 @@ public String obtenerRutaDeCancion(String seleccion) {
         return "src/servidor/Piratas.mp3";
     } else if (seleccion.equals("My Heart Will Go On")) {
         return "src/servidor/My Heart Will Go on.mp3";
-    } else if (seleccion.equals("Cancion 3")) {
-        return "ruta_del_archivo_3.mp3";
+
     } else if (seleccion.equals("La mejor de todas")) {
-        return "ruta_del_archivo_4.mp3";
+        return "src/servidor/La Mejor de Todas.mp3";
     } else if (seleccion.equals("Unlasting")) {
         return "src/servidor/Unlasting.mp3";
+    } else if (seleccion.equals("???")) {
+        return "src/servidor/secret.mp3";
     }
 
     return null; // Si no hay una ruta definida para el elemento seleccionado
@@ -92,7 +93,7 @@ public String obtenerRutaDeCancion(String seleccion) {
         jLabel1.setText("Mensajes de consola");
 
         jComboBox1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "He is a Pirate", "My Heart Will Go On", "Cancion 3", "La mejor de todas", "Unlasting" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "He is a Pirate", "My Heart Will Go On", "La mejor de todas", "Unlasting", "???" }));
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton1.setText("Cambiar");

@@ -111,9 +111,9 @@
           <StringArray count="5">
             <StringItem index="0" value="He is a Pirate"/>
             <StringItem index="1" value="My Heart Will Go On"/>
-            <StringItem index="2" value="Cancion 3"/>
-            <StringItem index="3" value="La mejor de todas"/>
-            <StringItem index="4" value="Unlasting"/>
+            <StringItem index="2" value="La mejor de todas"/>
+            <StringItem index="3" value="Unlasting"/>
+            <StringItem index="4" value="???"/>
           </StringArray>
         </Property>
       </Properties>
