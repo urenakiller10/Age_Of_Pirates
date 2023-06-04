@@ -8,6 +8,11 @@ package Servidor;
 import java.io.File;
 import jaco.mp3.player.MP3Player;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import java.io.File;import jaco.mp3.player.MP3Player;
+
 
 /**
  *
@@ -45,17 +50,7 @@ public void reproducirMusica() {
     }
 }
 
-public void pausarMusica() {
-    if (mp3Player != null && !mp3Player.isStopped()) {
-        mp3Player.pause();
-    }
-}
 
-public void resumirMusica(){
-    if (mp3Player != null && !mp3Player.isStopped()) {
-        mp3Player.play();
-    }
-}
 
 public String obtenerRutaDeCancion(String seleccion) {
     // Aquí puedes mapear cada elemento seleccionado en el combobox con la ruta correspondiente del archivo de música
@@ -171,13 +166,10 @@ public String obtenerRutaDeCancion(String seleccion) {
         reproduciendo = !reproduciendo; //Horrible pero funca siuuuuuuuuu
         if(reproduciendo){
             btnReproducir.setText("Pausar");
-            resumirMusica();
         }
         else{
             btnReproducir.setText("Reproducir");
-            pausarMusica();
         }
-        
     }//GEN-LAST:event_btnReproducirActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
