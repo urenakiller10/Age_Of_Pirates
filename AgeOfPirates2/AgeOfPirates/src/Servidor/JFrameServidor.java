@@ -85,17 +85,18 @@ public String obtenerRutaDeCancion(String seleccion) {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 204, 204));
 
+        txaMensajesServidor.setBackground(new java.awt.Color(0, 153, 255));
         txaMensajesServidor.setColumns(20);
         txaMensajesServidor.setRows(5);
         jScrollPane1.setViewportView(txaMensajesServidor);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setText("Mensajes de consola");
 
-        jComboBox1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jComboBox1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "He is a Pirate", "My Heart Will Go On", "La mejor de todas", "Unlasting", "???" }));
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Cambiar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,7 +104,7 @@ public String obtenerRutaDeCancion(String seleccion) {
             }
         });
 
-        btnReproducir.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnReproducir.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnReproducir.setText("Pausar");
         btnReproducir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -132,7 +133,7 @@ public String obtenerRutaDeCancion(String seleccion) {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(97, 97, 97)
                         .addComponent(jLabel1)))
-                .addContainerGap(101, Short.MAX_VALUE))
+                .addContainerGap(87, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
