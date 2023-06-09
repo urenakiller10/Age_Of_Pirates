@@ -41,7 +41,8 @@ public class servidor {
         try {
             //crea el socket servidor para aceptar dos conexiones
             numeroClientes = Integer.parseInt(JOptionPane.showInputDialog("Cantidad de clientes :"));
-            while(numeroClientes>6||numeroClientes<2){
+            while(numeroClientes>4||numeroClientes<2){
+                JOptionPane.showMessageDialog(null, "Cantidad de jugadores invalida (2<=x<=4)", "Error", JOptionPane.ERROR_MESSAGE);
                 numeroClientes = Integer.parseInt(JOptionPane.showInputDialog("Cantidad de clientes :"));
             }
             playerNumbers= new int[numeroClientes];
