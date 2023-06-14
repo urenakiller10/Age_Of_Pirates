@@ -30,6 +30,7 @@ public class JFrameServidor extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        txaMensajesServidor.setEditable(false);
         txaMensajesServidor.setColumns(20);
         txaMensajesServidor.setRows(5);
         jScrollPane1.setViewportView(txaMensajesServidor);

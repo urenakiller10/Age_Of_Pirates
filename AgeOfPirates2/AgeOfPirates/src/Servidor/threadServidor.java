@@ -317,11 +317,11 @@ public class threadServidor extends Thread
           catch (IOException e) {
               System.out.println("El cliente termino la conexion");break;}
       }
-      servidor.ventana.mostrar("Se removio un usuario");
+      servidor.ventana.mostrar("Salió un usuario");
       
       try
       {
-          servidor.ventana.mostrar("Se desconecto un usuario: "+nameUser);
+          servidor.ventana.mostrar(nameUser+ " desconectado.");
           cliente.close();
       }  
         catch(IOException et)
