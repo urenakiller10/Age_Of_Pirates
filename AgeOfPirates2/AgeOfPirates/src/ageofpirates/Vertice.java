@@ -10,7 +10,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author dmora
  */
 public class Vertice {
     public int dato;

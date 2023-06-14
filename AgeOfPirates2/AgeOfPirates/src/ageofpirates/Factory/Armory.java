@@ -7,10 +7,7 @@ package ageofpirates.Factory;
 
 import java.io.Serializable;
 
-/**
- *
- * @author Jasson
- */
+
 public class Armory extends Factory implements Serializable  {
     String type;
     Weapons weapon;

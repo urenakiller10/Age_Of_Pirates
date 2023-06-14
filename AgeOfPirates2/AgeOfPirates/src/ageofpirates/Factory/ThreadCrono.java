@@ -6,10 +6,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 
 
-/**
- *
- * @authors Jasson segura Jiménez & Luis Felipe Calderón 
- */
+
 public class ThreadCrono extends Thread implements Serializable{
 
     public boolean isRunning = true, isPaused=false;

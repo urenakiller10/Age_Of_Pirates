@@ -5,10 +5,7 @@
  */
 package Servidor;
 
-/**
- *
- * @author Jasson
- */
+
 public class JFrameServidor extends javax.swing.JFrame {
     servidor servidor1;
     /**

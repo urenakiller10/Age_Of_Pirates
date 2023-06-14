@@ -7,10 +7,7 @@ package ageofpirates.Factory;
 
 import java.io.Serializable;
 
-/**
- *
- * @author Jasson
- */
+
 public class Factory implements Serializable {
     private String name;
     private int cost;

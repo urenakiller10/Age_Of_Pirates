@@ -9,10 +9,7 @@ import ageofpirates.Vertice;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-/**
- *
- * @author Jasson
- */
+
 public class Conector extends Factory implements Serializable  {
     ArrayList<Vertice> aristas;
     public Conector() {

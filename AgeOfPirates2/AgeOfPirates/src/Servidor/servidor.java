@@ -13,10 +13,7 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 //import static tableroprogramario.Tablero.BOARD_SIZE;
 
-/**
- *
- * @author [Redacted]
- */
+
 public class servidor {
     int[] playerNumbers;
     //String[] playerNames;

@@ -10,8 +10,6 @@ import ageofpirates.Factory.Mine;
 import java.util.ArrayList;
 
 /**
- *
- * @author [Redacted]
  */
 public class Graph {
     ArrayList<Vertice> vertices;

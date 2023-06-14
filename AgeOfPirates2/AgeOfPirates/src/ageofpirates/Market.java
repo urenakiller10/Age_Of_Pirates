@@ -16,8 +16,6 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 /**
- *
- * @author Jasson
  */
 public class Market extends javax.swing.JFrame {
     private Player player;
@@ -30,7 +28,7 @@ public class Market extends javax.swing.JFrame {
      */
     public Market(Player player,Sea sea) {
         initComponents();
-        this.fondo=new JLabel(new ImageIcon(getClass().getResource("market.jpg")));
+       this.fondo=new JLabel(new ImageIcon(getClass().getResource("celes.jpg")));
         this.player=player;        
         this.panelMarket.add(fondo);
         fondo.setBounds(0,0,759,513);
@@ -84,9 +82,13 @@ public class Market extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
+        panelMarket.setBackground(new java.awt.Color(51, 204, 255));
+
+        labelIron.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         labelIron.setForeground(new java.awt.Color(255, 255, 255));
         labelIron.setText("jLabel1");
 
+        labelGold.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         labelGold.setForeground(new java.awt.Color(255, 255, 255));
         labelGold.setText("jLabel2");
 
@@ -172,62 +174,72 @@ public class Market extends javax.swing.JFrame {
             }
         });
 
-        lblMinaNombre.setForeground(new java.awt.Color(255, 255, 255));
+        lblMinaNombre.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblMinaNombre.setText("Mina de Hierro");
 
-        lblGhostShipName.setForeground(new java.awt.Color(255, 255, 255));
+        lblGhostShipName.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lblGhostShipName.setForeground(new java.awt.Color(51, 51, 51));
         lblGhostShipName.setText("Barco Fantasma");
 
+        lblMinaCosto.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblMinaCosto.setForeground(new java.awt.Color(255, 255, 255));
         lblMinaCosto.setText("Costo: 1000$");
 
+        lblGhostShipCost.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblGhostShipCost.setForeground(new java.awt.Color(255, 255, 255));
         lblGhostShipCost.setText("Costo: 2500$");
 
-        lblConnectorName.setForeground(new java.awt.Color(255, 255, 255));
+        lblConnectorName.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblConnectorName.setText("Conector");
 
+        lblConnectorCost.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblConnectorCost.setForeground(new java.awt.Color(255, 255, 255));
         lblConnectorCost.setText("Costo: 100$");
 
-        lblWitchName.setForeground(new java.awt.Color(255, 255, 255));
+        lblWitchName.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblWitchName.setText("Templo de la bruja");
 
+        lblWitchCost.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblWitchCost.setForeground(new java.awt.Color(255, 255, 255));
         lblWitchCost.setText("Costo: 2500$");
 
-        lblFountName.setForeground(new java.awt.Color(255, 255, 255));
+        lblFountName.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblFountName.setText("Fuente de energia");
 
+        lblFountCost.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblFountCost.setForeground(new java.awt.Color(255, 255, 255));
         lblFountCost.setText("Costo: 12000$");
 
         lblMerchanName.setBackground(new java.awt.Color(255, 255, 255));
-        lblMerchanName.setForeground(new java.awt.Color(255, 255, 255));
+        lblMerchanName.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblMerchanName.setText("Armeria de Cañones");
 
+        lblMerchanCost.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblMerchanCost.setForeground(new java.awt.Color(255, 255, 255));
         lblMerchanCost.setText("Costo: 1500$");
 
-        lblMultipleCanyon.setForeground(new java.awt.Color(255, 255, 255));
+        lblMultipleCanyon.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblMultipleCanyon.setText("Cañon Multiple");
 
+        lblMultipleCanyonCost.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblMultipleCanyonCost.setForeground(new java.awt.Color(255, 255, 255));
         lblMultipleCanyonCost.setText("Costo: 1500$");
 
-        lblRedBeard.setForeground(new java.awt.Color(255, 255, 255));
+        lblRedBeard.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblRedBeard.setText("Cañon BarbaRoja");
 
+        lblRedBeardCost.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblRedBeardCost.setForeground(new java.awt.Color(255, 255, 255));
         lblRedBeardCost.setText("Costo: 1500$");
 
-        lblBomb.setForeground(new java.awt.Color(255, 255, 255));
+        lblBomb.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblBomb.setText("Cañon Bomba");
 
+        lblBombCost.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblBombCost.setForeground(new java.awt.Color(255, 255, 255));
         lblBombCost.setText("Costo: 1500$");
 
-        lblSell.setForeground(new java.awt.Color(255, 255, 255));
+        lblSell.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblSell.setText("Vender");
 
         javax.swing.GroupLayout panelMarketLayout = new javax.swing.GroupLayout(panelMarket);
@@ -248,7 +260,7 @@ public class Market extends javax.swing.JFrame {
                             .addComponent(btnGhostShip, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(panelMarketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(lblGhostShipCost, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblGhostShipName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE)))
+                                .addComponent(lblGhostShipName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGap(18, 18, 18)
                         .addGroup(panelMarketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnConnector, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -290,7 +302,7 @@ public class Market extends javax.swing.JFrame {
                         .addGroup(panelMarketLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblSell, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnSell, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(94, Short.MAX_VALUE))
+                .addContainerGap(88, Short.MAX_VALUE))
             .addGroup(panelMarketLayout.createSequentialGroup()
                 .addGap(143, 143, 143)
                 .addComponent(labelIron, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -386,7 +398,7 @@ public class Market extends javax.swing.JFrame {
 
     private void btnGhostShipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGhostShipActionPerformed
         if(player.getMoney()>=2500){
-            String enemyName=JOptionPane.showInputDialog("Introducir enemy nick :");
+            String enemyName=JOptionPane.showInputDialog("Introducir nombre del enemigo :");
             for (int i = 0; i < sea.enemiesFactories.size() ; i++) {
                 if(enemyName.equals(sea.nameList.get(i))){
                     sea.boardEnemy.get(i).setVisible(true);
@@ -406,7 +418,7 @@ public class Market extends javax.swing.JFrame {
     private void btnConnectorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConnectorActionPerformed
         if(player.getMoney()>=100){
             sea.objective= new Conector();
-            JOptionPane.showMessageDialog(null, "coloca el conector donde desees");
+            JOptionPane.showMessageDialog(null, "Coloca el conector donde desees");
             sea.colocacion=true;
             player.setMoney(player.getMoney()-sea.objective.getCost());
         }else
@@ -418,7 +430,7 @@ public class Market extends javax.swing.JFrame {
     private void btnWitchTempleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWitchTempleActionPerformed
         if(player.getMoney()>=2500){
             sea.objective= new WitchTemple(sea);
-            JOptionPane.showMessageDialog(null, "coloca el templo donde desees");
+            JOptionPane.showMessageDialog(null, "Coloca el templo donde desees");
             sea.colocacion=true;
             player.setMoney(player.getMoney()-sea.objective.getCost());
         }else
@@ -430,7 +442,7 @@ public class Market extends javax.swing.JFrame {
     private void btnFountEnergyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFountEnergyActionPerformed
         if(player.getMoney()>=12000){
             sea.objective= new EnergyFount();
-            JOptionPane.showMessageDialog(null, "coloca la fuente donde desees");
+            JOptionPane.showMessageDialog(null, "Coloca la fuente donde desees");
             sea.colocacion=true;
             player.setMoney(player.getMoney()-sea.objective.getCost());
         }else
@@ -442,7 +454,7 @@ public class Market extends javax.swing.JFrame {
     private void btnMerchanCanyonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMerchanCanyonActionPerformed
         if(player.getMoney()>=1500){
             sea.objective= new Armory(7);
-            JOptionPane.showMessageDialog(null, "coloca la armeria de cañones donde desees");
+            JOptionPane.showMessageDialog(null, "Coloca la armería de cañones donde desees");
             sea.colocacion=true;
             player.setMoney(player.getMoney()-sea.objective.getCost());
         }else
@@ -466,7 +478,7 @@ public class Market extends javax.swing.JFrame {
     private void btnRedBeardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRedBeardActionPerformed
         if(player.getMoney()>=1500){
             sea.objective= new Armory(9);
-            JOptionPane.showMessageDialog(null, "coloca la armeria de cañones barba roja donde desees");
+            JOptionPane.showMessageDialog(null, "coloca la armería de cañones barba roja donde desees");
             sea.colocacion=true;
             player.setMoney(player.getMoney()-sea.objective.getCost());
         }else
@@ -478,7 +490,7 @@ public class Market extends javax.swing.JFrame {
     private void btnMerchanBombActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMerchanBombActionPerformed
         if(player.getMoney()>=1500){
             sea.objective= new Armory(10);
-            JOptionPane.showMessageDialog(null, "coloca la armeria de cañones Bomba donde desees");
+            JOptionPane.showMessageDialog(null, "Coloca la armería de cañones Bomba donde desees");
             sea.colocacion=true;
             player.setMoney(player.getMoney()-sea.objective.getCost());
         }else

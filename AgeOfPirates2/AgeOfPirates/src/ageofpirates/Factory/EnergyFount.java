@@ -7,10 +7,7 @@ package ageofpirates.Factory;
 
 import java.io.Serializable;
 
-/**
- *
- * @author Jasson
- */
+
 public class EnergyFount extends Factory implements Serializable  {
 
     public EnergyFount() {

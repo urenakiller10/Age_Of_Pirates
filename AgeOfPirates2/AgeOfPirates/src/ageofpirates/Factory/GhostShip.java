@@ -5,10 +5,7 @@ import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
-/**
- *
- * @author LuisF
- */
+
 public class GhostShip extends Factory{
     int fila, columna;
     private JButton[][] buttonArray;

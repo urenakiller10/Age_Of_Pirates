@@ -14,13 +14,8 @@ import java.util.Vector;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-//import tableroprogramario.Cards;
-//import tableroprogramario.SuperBrosMemory;
-//import static tableroprogramario.Tablero.BOARD_SIZE;
-/**
- *
- * @author Diego
- */
+
+
 public class threadServidor extends Thread
 {
      Socket cliente = null;//referencia a socket de comunicacion de cliente

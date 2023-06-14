@@ -9,10 +9,7 @@ import ageofpirates.Factory.Factory;
 import ageofpirates.Factory.Mine;
 
 
-/**
- *
- * @author [Redacted]
- */
+
 public class GrafoMatriz {
 
     int matriz[][];
